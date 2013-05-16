@@ -43,3 +43,5 @@ C:\Users\Administrator\Desktop\PlantsVsZombies\PlantsVsZombies\PlantsVsZombies\o
 C:\Users\Administrator\Desktop\PlantsVsZombies\PlantsVsZombies\PlantsVsZombies\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Administrator\Desktop\PlantsVsZombies\PlantsVsZombies\PlantsVsZombies\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Administrator\Desktop\PlantsVsZombies\PlantsVsZombies\obj\x86\Debug\PlantsVsZombies.QuitForm.resources
+H:\PlantsVsZombies\PlantsVsZombies\obj\x86\Debug\PlantsVsZombies.BarrierOne.resources
+H:\PlantsVsZombies\PlantsVsZombies\obj\x86\Debug\PlantsVsZombies.QuitForm.resources

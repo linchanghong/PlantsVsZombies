@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarrierOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarrierOne.Designer.cs">
+      <DependentUpon>BarrierOne.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="WellcomeForm.Designer.cs">
       <DependentUpon>WellcomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarrierOne.resx">
+      <DependentUpon>BarrierOne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
