@@ -95,6 +95,7 @@
             this.labMao.Name = "labMao";
             this.labMao.Size = new System.Drawing.Size(330, 114);
             this.labMao.TabIndex = 11;
+            this.labMao.Click += new System.EventHandler(this.labMao_Click);
             this.labMao.MouseEnter += new System.EventHandler(this.labMao_MouseEnter);
             this.labMao.MouseLeave += new System.EventHandler(this.labMao_MouseLeave);
             // 

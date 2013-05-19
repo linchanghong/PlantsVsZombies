@@ -6,15 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using PlantsVsZombies.MyPanel;
 
 namespace PlantsVsZombies
 {
     public partial class MenuForm : Form
     {
-        public MenuForm()
+        private MainForm mf;
+     
+        public MenuForm(MainForm mf)
         {
+            this.mf = mf;
             InitializeComponent();
         }
+
+
         MusicControl mc = new MusicControl();
 
         private void picXuan_MouseEnter(object sender, EventArgs e)
@@ -203,6 +209,9 @@ namespace PlantsVsZombies
             MusicControl.stopButtonMusic();
         }
 
-        
+        private void labMao_Click(object sender, EventArgs e)
+        {
+            mf.showMisson();
+        }
     }
 }

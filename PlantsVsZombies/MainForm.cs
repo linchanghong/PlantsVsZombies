@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using plantsVSzombies;
+using PlantsVsZombies.MyPanel;
 
 namespace PlantsVsZombies
 {
@@ -18,6 +19,12 @@ namespace PlantsVsZombies
         private PictureEffect draw;
         private Graphics graphicsBmp;
         private Graphics graphicsPanel;
+
+        private GamePanel gp;
+        //数据模型
+        private Map map;
+        //控制器
+        private Controller c;
 
         MusicControl mc = new MusicControl();
 
@@ -32,6 +39,13 @@ namespace PlantsVsZombies
 
         }
 
+
+        public void init()
+        {
+            initController();
+            initPanel();
+            initMap();
+        }
 
         //淡入淡出效果
         private void fadeOutIn()
@@ -75,10 +89,12 @@ namespace PlantsVsZombies
 
         public MainForm()
         {
+            this.Size = new Size(800,600);
             InitializeComponent();
             draw = new PictureEffect();//淡入淡出
             graphicsPanel = MainPanel.CreateGraphics();//淡入淡出
             MusicControl.OpenBackMusic();
+            init();
         }
         public void initForm()
         {
@@ -95,6 +111,31 @@ namespace PlantsVsZombies
             GetImage();
             MusicControl.playBackMusic();
             MusicControl.OpenButtonMusic();
+        }
+
+
+        private void initController()
+        {
+            c = new Controller();
+        }
+
+        private void initPanel()
+        {
+            gp = new GamePanel(c);
+            gp.SetBounds(-120, 0, 1400, 600);
+        }
+
+        private void initMap()
+        {
+            map = new Map(gp);
+            c.setMap(map);
+        }
+
+        internal void showMisson()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(gp);
+            this.Size = new Size(900, 620);
         }
     }
 }

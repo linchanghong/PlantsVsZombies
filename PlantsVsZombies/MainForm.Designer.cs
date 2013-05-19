@@ -39,7 +39,7 @@
             this.MainPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MainPanel.Location = new System.Drawing.Point(0, -1);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(800, 603);
+            this.MainPanel.Size = new System.Drawing.Size(900, 603);
             this.MainPanel.TabIndex = 0;
             // 
             // timer_logo
@@ -53,6 +53,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 594);
             this.Controls.Add(this.MainPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";

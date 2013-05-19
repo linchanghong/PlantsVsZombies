@@ -53,7 +53,7 @@ namespace PlantsVsZombies
         private void labStart_Click(object sender, EventArgs e)
         {
             MainForm mf = (MainForm)this.Parent.Parent;
-            MenuForm menuf = new MenuForm();
+            MenuForm menuf = new MenuForm(mf);
             mf.MainPanel.Controls.Clear();
             menuf.TopLevel = false;
             mf.MainPanel.Controls.Add(menuf);
