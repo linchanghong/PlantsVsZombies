@@ -7,6 +7,8 @@ using System.Collections;
 using PlantsVsZombies.MyZombie;
 using PlantsVsZombies.API;
 using PlantsVsZombies.MyEnum;
+using System.Drawing;
+using PlantsVsZombies.MyLand;
 
 namespace PlantsVsZombies.MyMission
 {
@@ -55,6 +57,7 @@ namespace PlantsVsZombies.MyMission
             }
             Map.Clear(Map.Zombies);
         }
+
         public virtual void initCards()
         {
 
@@ -139,7 +142,7 @@ namespace PlantsVsZombies.MyMission
             //游戏一开始的通知
             beginNotice();
             //生成僵尸
-            CreateZombies();
+           // CreateZombies();
         }
 
         public Street LandX(int x)

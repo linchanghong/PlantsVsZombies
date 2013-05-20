@@ -213,5 +213,21 @@ namespace PlantsVsZombies
         {
             mf.showMisson();
         }
+
+        private void picMenuHelp_Click(object sender, EventArgs e)
+        {
+            MainForm mf = (MainForm)this.Parent.Parent;
+            HelpForm hf = new HelpForm(mf);
+            mf.MainPanel.Controls.Clear();
+            hf.TopLevel = false;
+            mf.MainPanel.Controls.Add(hf);
+            hf.Show();
+        }
+
+        private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+            System.Threading.Thread.CurrentThread.Abort();
+        }
     }
 }

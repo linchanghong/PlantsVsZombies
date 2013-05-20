@@ -33,6 +33,8 @@
             this.picTitle = new System.Windows.Forms.PictureBox();
             this.timer_title = new System.Windows.Forms.Timer(this.components);
             this.labStart = new System.Windows.Forms.Label();
+            this.timer1_grassCircle = new System.Windows.Forms.Timer(this.components);
+            this.timer2_grassCircle = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +64,10 @@
             this.labStart.MouseEnter += new System.EventHandler(this.labStart_MouseEnter);
             this.labStart.MouseLeave += new System.EventHandler(this.labStart_MouseLeave);
             // 
+            // timer1_grassCircle
+            // 
+            this.timer1_grassCircle.Tick += new System.EventHandler(this.timer1_grassCircle_Tick);
+            // 
             // WellcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -74,6 +80,7 @@
             this.Name = "WellcomeForm";
             this.Text = "WellcomeForm";
             this.Load += new System.EventHandler(this.WellcomeForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.WellcomeForm_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).EndInit();
             this.ResumeLayout(false);
 
@@ -84,6 +91,8 @@
         private System.Windows.Forms.PictureBox picTitle;
         private System.Windows.Forms.Timer timer_title;
         private System.Windows.Forms.Label labStart;
+        private System.Windows.Forms.Timer timer1_grassCircle;
+        private System.Windows.Forms.Timer timer2_grassCircle;
 
     }
 }

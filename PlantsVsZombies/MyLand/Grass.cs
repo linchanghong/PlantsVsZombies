@@ -18,7 +18,6 @@ namespace PlantsVsZombies.MyLand
         public override Plant GrowPlant(string type)
         {
             Plant p = base.GrowPlant(type);
-
             return p;
         }
     }

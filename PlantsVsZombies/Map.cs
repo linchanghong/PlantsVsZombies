@@ -183,7 +183,9 @@ namespace PlantsVsZombies
         public override void Draw(Graphics g)
         {
             if (backgroundImage != null)
+            {
                 g.DrawImage(backgroundImage, -(int)(MyAPI.GamePanelX * 1.0), 0, 1400, 600);
+            }
             for (int i = 0; i < plants.Count; i++)
             {
                 Plant p = (Plant)plants[i];

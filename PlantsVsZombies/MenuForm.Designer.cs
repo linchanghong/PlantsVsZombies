@@ -80,6 +80,7 @@
             this.picMenuHelp.Size = new System.Drawing.Size(53, 24);
             this.picMenuHelp.TabIndex = 7;
             this.picMenuHelp.TabStop = false;
+            this.picMenuHelp.Click += new System.EventHandler(this.picMenuHelp_Click);
             this.picMenuHelp.MouseEnter += new System.EventHandler(this.picMenuHelp_MouseEnter);
             this.picMenuHelp.MouseLeave += new System.EventHandler(this.picMenuHelp_MouseLeave);
             // 
@@ -180,6 +181,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuForm";
             this.Text = "MenuForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuForm_FormClosed);
             this.Load += new System.EventHandler(this.MenuForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuForm_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.picXuan)).EndInit();

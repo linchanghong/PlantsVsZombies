@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using plantsVSzombies;
 using PlantsVsZombies.MyPanel;
+using System.Threading;
 
 namespace PlantsVsZombies
 {
@@ -77,6 +78,7 @@ namespace PlantsVsZombies
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
             if (graphicsBmp != null)
             {
                 graphicsBmp.Dispose();
@@ -85,6 +87,8 @@ namespace PlantsVsZombies
             {
                 graphicsPanel.Dispose();
             }
+            Application.Exit();
+            System.Threading.Thread.CurrentThread.Abort();
         }
 
         public MainForm()

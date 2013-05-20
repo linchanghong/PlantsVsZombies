@@ -10,6 +10,7 @@ using PlantsVsZombies.MyCleaner;
 using PlantsVsZombies.ExtendRole;
 using PlantsVsZombies.MyPlant;
 using PlantsVsZombies.MyEnum;
+using System.Drawing;
 
 namespace PlantsVsZombies.MyMission
 {
@@ -65,7 +66,7 @@ namespace PlantsVsZombies.MyMission
 
         public override void initCards()
         {          
-            Map.initCard(new PlantCard("Peashooter", 20));
+           // Map.initCard(new PlantCard("Peashooter", 20));
            // Map.initCard(new PlantCard("Repeater", 10));
             Map.initCard(new PlantCard("SunFlower", 2));           
         }

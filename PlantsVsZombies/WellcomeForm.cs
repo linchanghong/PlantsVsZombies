@@ -38,6 +38,7 @@ namespace PlantsVsZombies
         private void WellcomeForm_Load(object sender, EventArgs e)
         {
             timer_title.Enabled = true;
+            timer1_grassCircle.Enabled = true;//picturebox开始移动
         }
 
         private void labStart_MouseEnter(object sender, EventArgs e)
@@ -58,6 +59,22 @@ namespace PlantsVsZombies
             menuf.TopLevel = false;
             mf.MainPanel.Controls.Add(menuf);
             menuf.Show();
+        }
+
+        ProgressBar bar = new ProgressBar();
+        Rectangle rec = new Rectangle(230, 484, 64, 61);//将图片画在此矩形中
+        Image image_grassCircle = Image.FromFile("Images/grassCircle.png");
+
+        private void timer1_grassCircle_Tick(object sender, EventArgs e)
+        {
+            bar.nextAction();
+            this.Invalidate();
+        }
+
+
+        private void WellcomeForm_Paint(object sender, PaintEventArgs e)
+        {
+            bar.display(e.Graphics);
         }
     }
 }

@@ -39,16 +39,16 @@ namespace PlantsVsZombies
         }
         public static void stopButtonMusic()
         {
-            mciSendString("stop temp", null, 0, 0); //必须加temp_alias
+            mciSendString("stop Music/buttondown.mp3", null, 0, 0); //必须加temp_alias
         }
         public static void playButtonMusic()
         {
 
-            mciSendString("play temp repeat", null, 0, 0);
+            mciSendString("play Music/buttondown.mp3", null, 0, 0);
         }
         public static void closeButtonMusic()
         {
-            mciSendString(@"close temp", null, 0, 0);
+            mciSendString(@"close Music/buttondown.mp3", null, 0, 0);
         }
         #endregion
     }

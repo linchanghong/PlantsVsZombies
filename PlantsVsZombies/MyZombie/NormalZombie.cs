@@ -26,8 +26,8 @@ namespace PlantsVsZombies.MyZombie
         {
             X = x;
             Y = y;
-            Hp = 1;
-            Speed = 2;
+            Hp = 3;
+            Speed = 5;
             Dir = Direction.LEFT;
             Type = "Zombie";
 

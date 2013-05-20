@@ -20,7 +20,7 @@ namespace PlantsVsZombies.MyZombie
         public Zombie(Street street, Floor floor)
             : base(street, floor)
         {
-            Y = Y - MyAPI.ZombieHeight + MyAPI.GlassHeight-30;//调整僵尸出现的高度
+            Y = Y - MyAPI.ZombieHeight + MyAPI.GlassHeight-10;//调整僵尸出现的高度
             RolesStatus = RoleStatus.MOVE;
         }
 
@@ -100,7 +100,7 @@ namespace PlantsVsZombies.MyZombie
                                 Move();
                             break;
                         case RoleStatus.ATTACK:
-                            if(time % 10 == 0)                         
+                            if(time % 15 == 0)                         
                                 Attack();
                             break;
                         case RoleStatus.DISPEAR:
